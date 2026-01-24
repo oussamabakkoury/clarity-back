@@ -24,7 +24,7 @@ app.use(
     origin: '*', // tu pourras restreindre pour la prod
   })
 );
-app.use(bodyParser.json({ limit: '10mb' }));
+app.use(bodyParser.json({ limit: '25mb' }));
 
 // ---------- HEALTH ----------
 app.get('/health', (_req, res) => {
